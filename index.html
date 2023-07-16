@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Purpose of Power</title>
+</head>
+<body>
+  <h1>Purpose of Power</h1>
+
+  <button onclick="downloadFile('PurposeOfPowerInstaller.exe')">Download</button>
+
+  <script>
+    function downloadFile(fileUrl) {
+      const link = document.createElement('a');
+      link.href = fileUrl;
+      link.download = '';
+      link.click();
+    }
+  </script>
+</body>
