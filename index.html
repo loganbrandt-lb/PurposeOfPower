@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Purpose of Power</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('pmui_main_background_image_wqhd.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #logo {
+      max-width: 300px;
+      /* Adjust the max-width value to fit your logo size */
+    }
+
+    #downloadButton {
+      margin-top: 20px;
+      /* Adjust the margin-top value to add spacing between logo and button */
+    }
+  </style>
 </head>
 <body>
-  <h1>Purpose of Power</h1>
-
-  <button onclick="downloadFile('PurposeOfPowerInstaller.exe')">Download</button>
-
-  <script>
-    function downloadFile(fileUrl) {
-      const link = document.createElement('a');
-      link.href = fileUrl;
-      link.download = '';
-      link.click();
-    }
-  </script>
+  <div>
+    <img id="logo" src="Logo.png" alt="Logo">
+  </div>
+  <div>
+    <a href="PurposeOfPowerInstaller.exe" download>
+      <button id="downloadButton">Download File</button>
+    </a>
+  </div>
 </body>
+</html>
