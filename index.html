@@ -19,13 +19,33 @@
     }
 
     #logo {
-      max-width: 300px;
-      /* Adjust the max-width value to fit your logo size */
+      width: 75%;
+      /* Adjust the width value to make the logo larger or smaller */
+      max-width: 500px;
+      /* Set a maximum width for the logo to avoid stretching on larger screens */
     }
 
     #downloadButton {
       margin-top: 20px;
       /* Adjust the margin-top value to add spacing between logo and button */
+      background-image: url('pmui_button_large.png');
+      /* Set the path to your button background image */
+      background-size: cover;
+      padding: 15px 30px;
+      /* Adjust the padding to make the button larger or smaller */
+      font-family: 'Arial', sans-serif;
+      /* Replace 'YourFont' with the font you want to use (e.g., 'Arial', 'Helvetica', etc.) */
+      color: #ffffff;
+      /* Set the font color for the button text */
+      border: none;
+      /* Remove the default button border */
+      cursor: pointer;
+      /* Change the cursor to a hand icon on hover to indicate it's clickable */
+    }
+
+    #downloadButton:focus {
+      outline: none;
+      /* Remove the focus outline that appears when clicking the button */
     }
   </style>
 </head>
@@ -35,7 +55,7 @@
   </div>
   <div>
     <a href="PurposeOfPowerInstaller.exe" download>
-      <button id="downloadButton">Download File</button>
+      <button id="downloadButton">Download</button>
     </a>
   </div>
 </body>
