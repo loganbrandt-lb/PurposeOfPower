@@ -18,11 +18,21 @@
       height: 100vh;
     }
 
-    #logo {
+    #logo-container {
       width: 75%;
       /* Adjust the width value to make the logo larger or smaller */
       max-width: 2000px;
       /* Set a maximum width for the logo to avoid stretching on larger screens */
+      display: flex;
+      justify-content: center;
+      /* Center the logo horizontally */
+    }
+    
+    #logo {
+      width: 100%;
+      /* Set the logo width to 100% of its container */
+      height: auto;
+      /* Maintain the aspect ratio of the logo */
     }
 
     #downloadButton {
@@ -32,8 +42,8 @@
       /* Set the path to your button background image */
       background-size: cover;
       background-repeat: no-repeat;
-      width: auto;
-      height: auto;
+      width: 500px;
+      height: 60px;
       padding: 0;
       background-color: transparent;
       border: none;
@@ -49,7 +59,7 @@
   </style>
 </head>
 <body>
-  <div>
+  <div id="logo-container">
     <img id="logo" src="Logo.png" alt="Logo">
   </div>
   <div>
